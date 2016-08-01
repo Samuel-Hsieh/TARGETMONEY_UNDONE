@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/AuditAccountColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dialog_auditaccount_btn_RelativeLayout">
+
+            <RelativeLayout
+                android:id="@+id/dialog_auditaccount_title_RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="女友開銷"
+                    android:id="@+id/dialog_auditaccount_item_textView" />
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_auditaccount_listView"
+                android:dividerHeight="0.3dp"
+                android:divider="@color/White"
+                android:listSelector="@color/targetColor"
+                android:background="@color/AuditAccountColor"
+                android:layout_below="@id/dialog_auditaccount_title_RelativeLayout"
+               />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_auditaccount_btn_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/OK"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:id="@+id/dialog_auditaccount_btn"
+                android:background="@drawable/dialog_auditaccount_effect" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

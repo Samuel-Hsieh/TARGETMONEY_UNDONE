@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_layout"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textColor="@color/White"
+        android:layout_marginEnd="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/Audit_count" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="早餐"
+        android:textColor="@color/White"
+        android:id="@+id/Audit_item"
+        android:layout_toRightOf="@id/Audit_count"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="20元"
+        android:textColor="@color/White"
+        android:id="@+id/Audit_money"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="90%"
+        android:textColor="@color/White"
+        android:id="@+id/Audit_percent"
+        android:layout_toLeftOf="@id/Audit_money"
+        android:layout_toRightOf="@id/Audit_item"/>
+
+
+</RelativeLayout>

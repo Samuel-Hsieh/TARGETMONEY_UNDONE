@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AuditAccountColor"
+    android:orientation="vertical"
+    tools:context="black.target.deerlight.com.targetmoney.Pages_Fragments.AuditAccounts_Fragments.AuditAccountIncome_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/IncomePieChart_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/IncomeDate_RelativeLayout"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/IncomeStartDate_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/StartDate_Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/calendar_icon"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/IncomeAuditStartDate_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="2015年10月1日"
+                    android:textColor="@color/White"
+                    android:layout_toRightOf="@id/StartDate_Image" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/IncomeAuditBetweenDate_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DateBetween"
+                android:textColor="@color/White"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RelativeLayout
+                android:id="@+id/IncomeEndDate_RelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/EndDate_Image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/calendar_icon"/>
+
+                <TextView
+                    android:id="@+id/IncomeAuditEndDate_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/White"
+                    android:layout_toRightOf="@id/EndDate_Image"
+                    android:text="2015年10月30日" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/income_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/IncomeDate_RelativeLayout"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/IncomeTotal_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/income_line">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/IncomeTotal_textView"
+                android:textColor="@color/White"
+                android:text="@string/IncomeTotal" />
+
+            <TextView
+                android:id="@+id/IncomeTotal_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200元"
+                android:textColor="@color/White"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/IncomePieChart_FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/IncomeTotal_RelativeLayout">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:divider="@color/White"
+        android:listSelector="@color/AuditAccountActionBarColor"
+        android:id="@+id/IncomeAuditAccount_listView" />
+
+</LinearLayout>

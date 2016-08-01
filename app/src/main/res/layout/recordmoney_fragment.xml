@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/RdMoney_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/TopShow_LinearLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/showDate_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/changeDate_textView"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="2015年11月2日"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/changeDate_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ChangeDate"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TodayBudget"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/todayBudget_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="New Text"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@id/textView7" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SurplusMoney"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/surplusMoney_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="New Text"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@id/textView9"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/recordMoneyColor"
+                android:layout_below="@+id/TopShow_LinearLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:text="@string/Money"
+                        android:layout_alignParentLeft="true" />
+
+                    <EditText
+                        android:id="@+id/RdMoney_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/White"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="end"
+                        android:hint="@string/HideRdMoney_EnterHere"
+                        android:layout_toRightOf="@+id/textView11"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/income_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rdmoneyleftbtn_effect"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/White"
+                            android:text="@string/Income" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/payout_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rdmoneyrightbtn_effect"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/White"
+                            android:text="@string/Payout" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

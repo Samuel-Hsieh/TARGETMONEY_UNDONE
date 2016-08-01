@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ea5a73</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#719b5f</color>
+    <color name="recordMoneyColor">#f7896e</color>
+    <color name="recordMoneyPressColor">#c95e49</color>
+    <color name="AuditAccountActionBarColor">#38b4b4</color>
+    <color name="AuditAccountColor">#77c0c9</color>
+    <color name="targetActionBarColor">#71d398</color>
+    <color name="targetColor">#b7dc76</color>
+    <color name="settingsActionBarColor">#3b3b3b</color>
+    <color name="activatedColor">#1E90FF</color>
+    <color name="White">#FFFFFF</color>
+    <color name="TransparentColor">#00000000</color>
+
+</resources>

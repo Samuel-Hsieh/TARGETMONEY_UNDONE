@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/targetColor"
+    android:layout_height="match_parent"
+    tools:context="black.target.deerlight.com.targetmoney.Pages_Fragments.Target_Fragments.TargetCreate_Fragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Target_name"
+            android:textColor="@color/White"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/HideTarget_name"
+            android:gravity="end"
+            android:textColorHint="@color/White"
+            android:backgroundTint="@color/White"
+            android:textColor="@color/White"
+            android:id="@+id/targetName_Edit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Target_detail"
+            android:textColor="@color/White"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/HideTarget_detail"
+            android:gravity="end"
+            android:textColorHint="@color/White"
+            android:backgroundTint="@color/White"
+            android:textColor="@color/White"
+            android:id="@+id/targetDetail_Edit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Target_money"
+            android:textColor="@color/White"
+            android:id="@+id/textView3" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:text="@string/Money"
+                android:textColor="@color/White"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/HideTarget_money"
+                android:textColorHint="@color/White"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/White"
+                android:gravity="end"
+                android:ems="10"
+                android:id="@+id/targetMoney_Edit"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Target_color"
+            android:textColor="@color/White"
+            android:id="@+id/textView5" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/White"
+            android:id="@+id/ColorSpinner" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:textColor="@color/White"
+            android:id="@+id/TargetOk_btn"
+            android:background="@drawable/targetcreate_effect"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

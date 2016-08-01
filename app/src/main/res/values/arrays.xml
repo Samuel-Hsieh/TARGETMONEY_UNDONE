@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Spinnerlist">
+        <item>米黃色</item>
+        <item>蒂芙尼藍</item>
+        <item>桃紅色</item>
+        <item>天空藍</item>
+    </string-array>
+    <string-array name="TargetColorlist">
+        <item>#F0E68C</item>
+        <item>#5BC2C1</item>
+        <item>#FF0088</item>
+        <item>#87CEFA</item>
+    </string-array>
+    <string-array name="PieColorlist">
+        <item>#FF9833</item>
+        <item>#FF8537</item>
+        <item>#FF7239</item>
+        <item>#FF613B</item>
+        <item>#FF4D41</item>
+        <item>#FF3C45</item>
+        <item>#FF334B</item>
+        <item>#F53353</item>
+        <item>#E3395D</item>
+        <item>#CE4467</item>
+        <item>#B35373</item>
+        <item>#9D617D</item>
+        <item>#896D86</item>
+        <item>#7A7781</item>
+    </string-array>
+</resources>
+

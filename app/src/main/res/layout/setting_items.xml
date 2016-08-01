@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/setting_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="金額設定"
+        android:textColor="@android:color/background_dark"
+        android:layout_toRightOf="@id/setting_icon"
+        android:layout_centerVertical="true"
+        android:id="@+id/setting_item_textView" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/setting_switch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000元"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/setting_subtitle_textView" />
+</RelativeLayout>

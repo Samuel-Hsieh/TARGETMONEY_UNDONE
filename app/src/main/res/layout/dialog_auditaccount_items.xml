@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2015年11月10日"
+        android:id="@+id/dialog_auditaccount_items_showtime_textView"
+        android:layout_alignParentStart="true" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/dialog_auditaccount_items_showtime_textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="100000元"
+            android:layout_gravity="end"
+            android:id="@+id/dialog_auditaccount_items_money_textView" />
+    </HorizontalScrollView>
+</RelativeLayout>
